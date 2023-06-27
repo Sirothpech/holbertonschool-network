@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-## Write a Bash script that displays listening ports
-if [ $# -ne 0 ]; then
-ping -c 5 $1
+# Ping an IP address
+if [ $# = 1 ]; then
+	ping -c5 "$1"
 else
-echo "Usage: $(basename "$0") {IP_ADDRESS}"
+	echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
 fi
